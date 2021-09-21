@@ -4,9 +4,10 @@ import './index.css';
 import TodosReducer from "./components/TodosReducer";
 import RgbForm from "./components/RgbForm";
 import Posts from "./components/Posts";
+import CopyToClipboard from "./components/CopyToClipboard";
 
 ReactDOM.render(
-      <Posts />,
+      <CopyToClipboard />,
   document.getElementById('root')
 );
 
