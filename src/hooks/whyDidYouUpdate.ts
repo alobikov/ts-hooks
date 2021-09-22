@@ -5,11 +5,11 @@ export function useWhyDidYouUpdate<T>(name: string, props: T) {
 
     useEffect(() => {
         const allProps = {...currentProps.current, ...props}
-        const changedProps = Object.keys(allProps).filter((key) => {
-                return allProps[key as keyof T] !== currentProps.current[key as keyof T]
+        const changedProps = (Object.keys(allProps) as Array<keyof typeof allProps>).filter((key) => {
+                return allProps[key] !== currentProps.current[key]
             }
         )
         currentProps.current = props
-        console.log(`Component ${name} received updated props:`,changedProps.join(','))
+        console.log(`Component ${name} received updated props:`, changedProps.join(','))
     })
 }
