@@ -8,9 +8,10 @@ import CopyToClipboard from "./components/CopyToClipboard";
 import HoverOver from "./components/HoverOver";
 import WhyUpdated from "./components/WhyUpdated";
 import LoadImage from "./components/LoadImage";
+import Debouncer from "./components/Debounce";
 
 ReactDOM.render(
-    <LoadImage/>,
+    <Debouncer/>,
     document.getElementById('root')
 );
 
