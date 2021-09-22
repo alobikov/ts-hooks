@@ -5,9 +5,11 @@ import TodosReducer from "./components/TodosReducer";
 import RgbForm from "./components/RgbForm";
 import Posts from "./components/Posts";
 import CopyToClipboard from "./components/CopyToClipboard";
+import HoverOver from "./components/HoverOver";
+import WhyUpdated from "./components/WhyUpdated";
 
 ReactDOM.render(
-      <CopyToClipboard />,
-  document.getElementById('root')
+    <WhyUpdated/>,
+    document.getElementById('root')
 );
 
