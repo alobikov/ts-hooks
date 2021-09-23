@@ -9,9 +9,10 @@ import HoverOver from "./components/HoverOver";
 import WhyUpdated from "./components/WhyUpdated";
 import LoadImage from "./components/LoadImage";
 import Debouncer from "./components/Debounce";
+import DarkMode from "./components/DarkMode";
 
 ReactDOM.render(
-    <Debouncer/>,
+    <DarkMode/>,
     document.getElementById('root')
 );
 
